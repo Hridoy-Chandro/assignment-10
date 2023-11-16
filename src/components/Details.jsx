@@ -3,7 +3,7 @@ import { Link, useLoaderData } from "react-router-dom";
 
 const Details = () => {
     const product = useLoaderData();
-    const { name, _id, photo, price, description } = product;
+    const { name, _id, photo, price, description, rating } = product;
 
 
     return (
@@ -15,6 +15,7 @@ const Details = () => {
                     <div className="badge badge-secondary">New</div>
                 </h2>
                 <p>{description}</p>
+                <p>{rating}</p>
                 <br />
                 <p>Price: {price}</p>
             </div>
