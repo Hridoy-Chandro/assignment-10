@@ -20,7 +20,7 @@ const AddProducts = () => {
         console.log(newProduct);
 
         // sent data to the server
-        fetch('http://localhost:5001/product', {
+        fetch('https://hridoy-ten.vercel.app/product', {
             method: 'POST',
             headers: {
                 'content-type' : 'application/json'

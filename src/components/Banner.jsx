@@ -1,9 +1,9 @@
-
+import image from '../images/final banner.jpg';
 
 const Banner = () => {
     return (
         <div>
-           <img src="/src/images/final banner.jpg" alt="" />            
+           <img src={image} alt="" />            
         </div>
     );
 };

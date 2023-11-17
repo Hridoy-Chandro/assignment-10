@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import { space } from "postcss/lib/list";
 import { config } from "localforage";
+import logo from '../images/logo.jpg';
 
 
 const Navbar = () => {
@@ -22,7 +23,7 @@ const Navbar = () => {
                 <div className="flex-1 items-center ">
                     <Link to={'/home'}>
                         <div className="flex items-center gap-3 font-semibold">
-                            <img className="w-[50px]" src="/src/images/logo.jpg" alt="" />
+                            <img className="w-[50px]" src={logo} alt="" />
                             <h1 className="text-3xl">HW TECH</h1>
                         </div>
                     </Link>

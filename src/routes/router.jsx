@@ -30,45 +30,45 @@ const router = createBrowserRouter([
       {
         path: '/updateProduct/:id',
         element: <UpdateProduct></UpdateProduct>,
-        loader: ({ params }) => fetch(`http://localhost:5001/product/${params.id}`)
+        loader: ({ params }) => fetch(`https://hridoy-ten.vercel.app/product/${params.id}`)
       },
       {
         path: '/details/:id',
         element: <Details></Details>,
-        loader: ({ params }) => fetch(`http://localhost:5001/product/${params.id}`)
+        loader: ({ params }) => fetch(`https://hridoy-ten.vercel.app/product/${params.id}`)
       },
 
       {
         path: '/myCart/:id',
         element: <MyCart></MyCart>,
-        loader: ({ params }) => fetch(`http://localhost:5001/product/${params.id}`)
+        loader: ({ params }) => fetch(`https://hridoy-ten.vercel.app/product/${params.id}`)
       },
 
       {
         path: '/googleProduct',
         element: <Google></Google>,
-        loader: () => fetch('http://localhost:5001/product')
+        loader: () => fetch('https://hridoy-ten.vercel.app/product')
       },
 
       {
         path: '/miProduct',
         element: <Mi></Mi>,
-        loader: () => fetch('http://localhost:5001/product')
+        loader: () => fetch('https://hridoy-ten.vercel.app/product')
       },
       {
         path: '/itunesProduct',
         element: <Itunes></Itunes>,
-        loader: () => fetch('http://localhost:5001/product')
+        loader: () => fetch('https://hridoy-ten.vercel.app/product')
       },
       {
         path: '/samsungProduct',
         element: <Samsung></Samsung>,
-        loader: () => fetch('http://localhost:5001/product')
+        loader: () => fetch('https://hridoy-ten.vercel.app/product')
       },
       {
         path: '/sonyProduct',
         element: <Sony></Sony>,
-        loader: () => fetch('http://localhost:5001/product')
+        loader: () => fetch('https://hridoy-ten.vercel.app/product')
       },
 
 

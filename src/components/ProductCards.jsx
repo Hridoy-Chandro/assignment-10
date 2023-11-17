@@ -17,7 +17,7 @@ const ProductCards = ({ product }) => {
             if (result.isConfirmed) {
 
 
-                fetch(`http://localhost:5001/product/${_id}`, {
+                fetch(`https://hridoy-ten.vercel.app/product/${_id}`, {
                     method: 'DELETE',
                 })
                     .then(res => res.json())
